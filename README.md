@@ -3,7 +3,7 @@ TempMunger
 
 FS layout loosely resembles CVAST research group [guidelines][CVAST guidelines].
 
-This project employs a Git submodule setup, consequently:
+This project employs a Git submodule setup, consequently either `clone --recursice` or:
 
     git submodule init && git submodule update
 
