@@ -1,0 +1,59 @@
+# General
+*~
+.DS_Store
+*.log
+
+# IDEA
+*.iml
+.idea/
+
+# Gradle
+.gradle/
+/build
+
+# Distro
+/bin/temp-munger.jar
+
+# Tomcat
+tomcat.8888/
+
+# Elasticsearch
+/data/elasticsearch
+/data/temp-munger
+/data/temp-munger-test
+
+# Docs
+dokka/
+esdoc/
+
+# LaTeX
+doc/source/**/*.acn
+doc/source/**/*.acr
+doc/source/**/*.alg
+doc/source/**/*.aux
+doc/source/**/*.bbl
+doc/source/**/*.blg
+doc/source/**/*.glg
+doc/source/**/*.glo
+doc/source/**/*.gls
+doc/source/**/*.glsdefs
+doc/source/**/*.idx
+doc/source/**/*.ilg
+doc/source/**/*.ind
+doc/source/**/*.ist
+doc/source/**/*.loa
+doc/source/**/*.lof
+doc/source/**/*.lot
+doc/source/**/*.nav
+doc/source/**/*.out
+doc/source/**/*.snm
+doc/source/**/*.synctex.gz
+doc/source/**/*.toc
+doc/source/**/*.fdb_latexmk
+doc/source/**/*.fls
+doc/source/proposal/proposal.pdf
+doc/source/thesis/thesis.pdf
+doc/source/poster/INF_Poster.pdf
+
+# Jupyter
+.ipynb_checkpoints/

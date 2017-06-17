@@ -1,0 +1,57 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="890" measuredH="455" mockupW="850" mockupH="414">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="40" y="41" w="450" h="393" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <close>true</close>
+        <maximizeRestore>true</maximizeRestore>
+        <minimize>true</minimize>
+        <text>%09%09%09%09TempMunger</text>
+        <topheight>26</topheight>
+      </controlProperties>
+    </control>
+    <control controlID="1" controlTypeID="com.balsamiq.mockups::ButtonBar" x="55" y="63" w="-1" h="-1" measuredW="133" measuredH="27" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Tabular%2C%20Charts</text>
+      </controlProperties>
+    </control>
+    <control controlID="2" controlTypeID="com.balsamiq.mockups::DataGrid" x="40" y="89" w="450" h="327" measuredW="385" measuredH="329" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Some%20Person%20%5Ev%2C%201st%20Timestamp%20%5Ev%2C%202nd%20Timestamp%20%5E%0AGiacomo%20Guilizzoni%5CrFounder%20%26%20CEO%2C%202018-03-12%2C%202018-03-12%0AMarco%20Botton%5CrTuttofare%2C%2034%2C%20%0AMariah%20Maclachlan%5CrBetter%20Half%2C%2004/05/1987%2C%2004/05/1987%0AValerie%20Liberty%5CrHead%20Chef%2C%2004/05/88%209%3A00%2C%2004/05/88%209%3A00%0AGuido%20Jack%20Guilizzoni%2C%206%2C%20...%0AHugo%20Boss%2C%202012-01-03%2C%202012-01-03%0AJohn%20Doe%2C%203.12.2001%2C%203.12.2001%0AJane%20Doe%2C%20Bam%2C%20Juhuu%0AAlice%20Foo%2C%20null%2C%202013-1-1T12%3A00+2%0ABob%20Bar%2C%203.4%2C%20false%0A%7B65L%2C%200R%2C%2035%7D</text>
+        <verticalScrollbar>true</verticalScrollbar>
+      </controlProperties>
+    </control>
+    <control controlID="4" controlTypeID="com.balsamiq.mockups::HorizontalScrollBar" x="40" y="416" w="450" h="-1" measuredW="100" measuredH="16" zOrder="3" locked="false" isInGroup="-1"/>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::StickyNote" x="521" y="63" w="317" h="105" measuredW="109" measuredH="123" zOrder="4" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>*Merging*%20time-oriented%20data%20columns%3A%0A%20%0A%20*%20Dragging%20and%20dropping%20column%20headers%0A%20*%20Opens%20dialog%20for%20further%20interaction%20options...</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::StickyNote" x="521" y="183" w="317" h="105" measuredW="109" measuredH="123" zOrder="5" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>*Extracting*%20time-oriented%20data%20columns%3A%0A%20%0A%20*%20Right-clicking%20column%20header%0A%20*%20Opens%20dialog%20for%20further%20interaction%20options...</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::Menu" x="521" y="309" w="-1" h="-1" measuredW="150" measuredH="99" zOrder="6" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>0</selectedIndex>
+        <text>Merge%20Columns...%0A---%0Ax%20Unifying%20Format%0AClearing%20Erroneous%0Ax%20Setting%20Defaults</text>
+      </controlProperties>
+    </control>
+    <control controlID="10" controlTypeID="com.balsamiq.mockups::Menu" x="688" y="309" w="-1" h="-1" measuredW="150" measuredH="78" zOrder="7" locked="false" isInGroup="-1">
+      <controlProperties>
+        <selectedIndex>0</selectedIndex>
+        <text>Extract%20Column%20By...%0A---%0AExtracting%20Date%0Ao%20Extracting%20Time</text>
+      </controlProperties>
+    </control>
+    <control controlID="12" controlTypeID="com.balsamiq.mockups::SearchBox" x="324" y="64" w="151" h="-1" measuredW="120" measuredH="25" zOrder="8" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Search</text>
+      </controlProperties>
+    </control>
+    <control controlID="13" controlTypeID="com.balsamiq.mockups::Label" x="521" y="434" w="-1" h="-1" measuredW="369" measuredH="21" zOrder="9" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>--%3E%20Relevant%20chart%20view%20presents%20distribution%20and%20offers%20choice</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

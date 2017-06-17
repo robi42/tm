@@ -1,0 +1,36 @@
+In this appendix some \gls{ir} background is presented, as core data storage and querying of our prototype\index{prototype} is based on.
+
+\subsubsection{TF-IDF \& Apache Lucene}
+
+The equations~\ref{eq:ir-tf-1} to~\ref{eq:ir-tf-idf} lay out some of the most fundamental concepts behind \gls{ir}.
+
+\begin{equation}
+\text{tf}(t, d) = f_{t,d}
+\label{eq:ir-tf-1}
+\end{equation}
+
+\begin{equation}
+f_{t,d} =
+\begin{cases}
+  1 \quad \text{if } t \text{ occurs in } d \\
+  0 \quad \text{otherwise} \\
+\end{cases}
+\label{eq:ir-tf-2}
+\end{equation}
+
+\begin{equation}
+\text{idf}(t, D) = \log\frac{N}{|\{d \in D : t \in d\}|}
+\label{eq:ir-idf}
+\end{equation}
+
+\begin{equation}
+\text{tf-idf}(t, d, D) = \text{tf}(t, d) \times \text{idf}(t, D)
+\label{eq:ir-tf-idf}
+\end{equation}
+
+It is \emph{\gls{tf-idf}}\footnote{\textcolor{blue}{\href{https://en.wikipedia.org/wiki/Tf-idf}{en.wikipedia.org/wiki/Tf-idf}}}.
+Basically, this is an effective as well as efficient way to score term query search hits based on term occurrences in a corpus of documents.
+The illustrated formula set uses a simple boolean frequency.
+
+A popular and high-quality search engine implementation in Java is \emph{Apache Lucene\footnote{\textcolor{blue}{\href{https://lucene.apache.org/}{lucene.apache.org}}}}.
+It is also the foundation on which Elasticsearch is built upon~\cite{Gormley2015}.

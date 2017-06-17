@@ -1,0 +1,28 @@
+<mockup version="1.0" skin="sketch" fontFace="Balsamiq Sans" measuredW="882" measuredH="434" mockupW="842" mockupH="393">
+  <controls>
+    <control controlID="0" controlTypeID="com.balsamiq.mockups::TitleWindow" x="40" y="41" w="450" h="393" measuredW="450" measuredH="400" zOrder="0" locked="false" isInGroup="-1">
+      <controlProperties>
+        <close>true</close>
+        <maximizeRestore>true</maximizeRestore>
+        <minimize>true</minimize>
+        <text>%09%09%09%09TempMunger</text>
+        <topheight>26</topheight>
+      </controlProperties>
+    </control>
+    <control controlID="5" controlTypeID="com.balsamiq.mockups::Label" x="176" y="189" w="-1" h="-1" measuredW="178" measuredH="21" zOrder="1" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Drag%20and%20Drop%20CSV%20File%20here...</text>
+      </controlProperties>
+    </control>
+    <control controlID="6" controlTypeID="com.balsamiq.mockups::Button" x="224" y="224" w="-1" h="-1" measuredW="82" measuredH="27" zOrder="2" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Or%20Open...</text>
+      </controlProperties>
+    </control>
+    <control controlID="7" controlTypeID="com.balsamiq.mockups::StickyNote" x="521" y="136" w="361" h="127" measuredW="109" measuredH="123" zOrder="3" locked="false" isInGroup="-1">
+      <controlProperties>
+        <text>Initial%20view%3A%0A%20%0A%20*%20*As%20simple%20as%20possible*%0A%20*%20Just%20dragging%20%26%20dropping%20file%20or%20opening%20via%20FS%20dialog</text>
+      </controlProperties>
+    </control>
+  </controls>
+</mockup>

@@ -1,0 +1,6 @@
+[submodule "src/backend"]
+	path = src/backend
+	url = git@github.com:robi42/tm-be.git
+[submodule "src/frontend"]
+	path = src/frontend
+	url = git@github.com:robi42/tm-fe.git

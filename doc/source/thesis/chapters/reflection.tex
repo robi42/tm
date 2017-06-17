@@ -1,0 +1,133 @@
+It is time to reflect on our solution and its results.
+
+\section{Comparison with Related Work}
+
+Therefore, we first conduct a comparison with related work.
+
+Our aim with \emph{\textbf{TempMunger}} was to extend mainly the approaches\index{approach} from \emph{DataWrangler} and \emph{OpenRefine}, adding our ideas for improved \gls{ux} and focusing on time-oriented\index{time-oriented} data support, specifically.
+
+Generally, we believe that we did reach these goals.
+TempMunger supports wrangling\index{wrangle} time-oriented\index{time-oriented} datasets, both with the traditional spreadsheet-like \gls{ui} as well as special, visually interactive charting aids.
+Evaluation has proven the prototypically\index{prototype} implemented approach\index{approach} to be overall useful.
+Consequently, it can be seen as an advance in the field, at least to some extent.
+Table~\ref{tab:reflective-comparison} offers a reflective comparison overview.
+
+Nevertheless, there are some open issues which are being addressed in the next section.
+
+\begin{table}
+  \centering
+  \begin{tabular}{cccccc}
+    \toprule
+                      & \emph{DataWrangler}  & \emph{OpenRefine}  & \emph{Timelion}  & \emph{Jupyter}  & \emph{\textbf{TempMunger}}  \\
+    \midrule
+    Time-Oriented     & No                   & Yes                & Focus                  & Supported               & Focus      \\
+    Charting          & Little               & Some               & Extensive              & Extensive               & Focus      \\
+    Approach          & Spreadsheet          & Spreadsheet        & \gls{cli} + \gls{dsl}  & \gls{cli} + \gls{repl}  & Dashboard  \\
+    \bottomrule
+  \end{tabular}
+  \caption{Reflective comparison of our solution with related work.}
+  \label{tab:reflective-comparison}
+\end{table}
+
+\section{Discussion of Open Issues}
+
+So, some issues were found during evaluation which can be subsumed as follows:
+
+\begin{itemize}
+  \item The usage and behavior of the software is not always intuitive
+  \item Immediate visual feedback of system state is partially lacking
+  \item Sometimes possible actions are not completely clear to the user
+  \item Generally, usability can be improved in some parts of the prototype\index{prototype}
+  \item Moreover, interactive chart visualizations can be further augmented
+  \item Scalability of visualizations should be addressed more
+  \item The supported transformation operations could be enhanced
+  \item Some aspects are either incomplete or could, at least, be refined
+\end{itemize}
+
+More detailed information concerning evaluation design\index{design}, process, and tests revealing these issues can be found in the corresponding Section~\ref{sec:qualitative-evaluation}.
+
+As mentioned above, evaluation has proven the approach\index{approach} to be overall useful, though.
+Furthermore, feedback regarding and inspiration for future work has been given while conducting qualitative evaluation of the approach\index{approach} and implemented prototype\index{prototype}.
+To sum it up, it appears our achieved results are, all in all, heading towards the right direction.
+
+
+\section{Requirements Fulfillment}
+
+With our approach\index{approach} and prototype\index{prototype} TempMunger we think to, in general, have fulfilled the requirements as derived and listed in Section~\ref{sec:requirements-list}.
+
+That is, it is capable of loading and working with diverse datasets (\textbf{R1}).
+This is being achieved via easily uploading arbitrary \textsc{CSV} data files.
+Moreover, it has proven to be, generally, intuitive for casual users (\textbf{R2}), while offering some shortcuts for rather power users (\textbf{R3}).
+Focus is indeed on visual-interactive\index{visual-interactive} charting aid (\textbf{R4}) centering on applying time-oriented\index{time-oriented} data transformations\index{transformation} (\textbf{R5}).
+There are numerous interactive chart visualizations provided for this purpose.
+A visual overview of datasets containing time-oriented\index{time-oriented} data is offered (\textbf{R6}).
+For instance, a special, interactive calendar heatmap visualization is available.
+We have put emphasis on choosing most effective and efficient visualizations (\textbf{R7}).
+Therefore, we have focused on employing different kinds of bar charts.
+Interactively exploring datasets is convenientely possible (\textbf{R8}).
+This is backed by various navigational, search, and filtering capabilities.
+A more traditional tabular editor is supported as well (\textbf{R9}).
+Editing time-oriented\index{time-oriented} data is enhanced with specific date and time picker controls (\textbf{R10}).
+Addressing data quality issues (\textbf{R11}) like cleaning missing and erroneous values, normalizing data, and spotting outliers (\textbf{R12}) are all supported via visual-interactive\index{visual-interactive} tools and techniques.
+All the identified data transformation\index{transformation} operations we have originally defined in our requirements list are supported, including merging table editor columns via easy drag \& drop interaction (\textbf{R13}).
+
+
+\section{Answering the Research Questions}
+
+Consequently, returning to our initial research questions:
+
+\begin{enumerate}
+  \item \emph{\textbf{Which data transformations\index{transformation} are best supported by analytical methods and for which transformations\index{transformation} is visual support beneficial?}}
+
+  We have answered this with our approach\index{approach} supporting data quality cleaning, normalization, and merging operations.
+  That is, we have determined these general transformations\index{transformation} to be best suited while visual support being benefecial.
+  More in-depth, we are, consequentially, supporting the following transformation operations:
+  \begin{itemize}
+    \item Cleanup of missing and erroneous values, allowing fill and deletion
+    \item Normalization of values regarding points in time and intervals
+    \item Merging of time-oriented data columns, using average calculations
+  \end{itemize}
+  Generally, data transformations which require some sort of statistical querying and/or computation are, naturally, best supported by analytical methods.
+  Moreover, whenever data has to be analyzed and/or manipulated in batches or even considering a dataset as a whole, visual support is beneficial for granting necessary overview and insights.
+  The larger and diverse the dataset, the more this comes into effect.
+  Fully automated techniques, on the contrary, make most sense when the transformations to apply are rather straightforward.
+  Our research and design\index{design} process led to these findings, and our qualitative evaluation confirmed the results.
+  \item \emph{\textbf{How do concrete \gls{datawrangling} workflow processes look like and how can these processes be supported by \gls{va} methods?}}
+
+  We have answered this question extensively with the state of the art review and analysis\index{analysis} as well as, particularly, through the design\index{design} of our approach\index{approach} and prototype\index{prototype}.
+  More concretely, such processes are oftentimes of exploratory nature.
+  Thus, we are supporting them visual-interactively\index{visual-interactive}.
+  Plus, especially repetitive actions, being applied to batches of data via bulk operations, are ones where support by \gls{va} methods can shine.
+
+  This way users working on the data can focus on achieving task goals at hand most effectively and efficiently, empowered with superior interactive visualization of the respective dataset.
+  That is, instead of fiddling around with the data manually, mainly being in the dark and applying hand-crafted scripts, clear and direct views of the data, plus its possible as well as plausible transformations, are conveniently presented and at the fingertips of the user.
+  \item \emph{\textbf{What \gls{datawrangling} tasks need to be tackled in particular when dealing with time-oriented\index{time-oriented} data and how can we support them with \gls{va} methods?}}
+
+  Again, through the support we have implemented in our prototype\index{prototype} for cleaning, normalization, and merging operations we have answered this.
+  I.e., supporting direct manipulation via dedicated \gls{ui} controls as well as offering interactive charts for the aforementioned operations in a reasonable and intuitive way.
+  The visualizations which we found to be most suitable are mainly bar charts for displaying distributions, think histograms, and calendar heatmap inspired ones.
+
+  Common transformation operations which need to be addressed for \gls{datawrangling} purposes, in general, are:
+  directly editing single values, deleting rows, also in batches, unifying formats, cleaning up missing and erroneous values, spotting anamolies respectively outliers for subsequent cleanup via according highlighting mechanisms, transforming values of certain fields batch-wise, possibly ``normalizing'' these to some other specified value, and merging columns according to some algorithm.
+
+  Now, as mentioned above, we have addressed each of these with adequate \gls{va} methods, focusing on application to time-oriented data:
+  direct manipulation through dedicated date and time picker \gls{ui} controls.
+  Bulk deletion of rows via tabular editor controls as well as interactive aggregated charts.
+  Unified formatting is guaranteed via uniform storage and display regarding timezone, plus by export capabilities.
+  Missing values cleanup is, again, supported by histogram-like distribution bar charts.
+  Outlier detection suggestions are enabled via interactive filtering notifications.
+  Batch-wise transformation concerning normalization is backed by interactive bar charts as well as calendar heatmap based interaction.
+
+  Visualizing data distribution via bar charts in a histogram-inspired way and time-oriented data via calendar heatmaps are especially powerful tools in this context.
+  The general usefulness of these visualizations was underpinned by our evaluation.
+
+\end{enumerate}
+
+Therefore, we can conclude that, all in all, we have answered our main research question satisfactorily.
+The question having been:
+
+\emph{\textbf{How can we support \gls{datawrangling} with \gls{va} techniques?}}
+
+To sum it all up, we can support \gls{datawrangling} this way mainly by focusing on tasks which are, on the one hand, related to batched data transformation operations as well as of rather complex nature and, on the other hand, thus requiring special attention and oversight.
+These are tasks where fully automated approaches fall short, as a human adequately empowered through \gls{va} techniques can, still, perform better.
+Thus, the sweet spot is most probably located somewhere in between, augmenting an interactive interface driven by powerful visualizations with semi-automatic suggestions, reasonably.
