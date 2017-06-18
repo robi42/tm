@@ -67,8 +67,7 @@ presentation: # https://jupyter.org/install.html
 build_presentation:
 	cd doc/source/presentation && jupyter nbconvert Presentation.ipynb --to slides
 
-deploy_presentation:
-	cd doc/source/presentation && jupyter nbconvert Presentation.ipynb --to slides
+deploy_presentation: build_presentation
 	rsync -avzhP doc/source/presentation/Presentation.slides.html $(LOGIN):/var/www/tm/presentation/index.html
 	rsync -avzhP doc/source/presentation/custom.css $(LOGIN):/var/www/tm/presentation/custom.css
 	rsync -avzhP doc/source/presentation/reveal.js $(LOGIN):/var/www/tm/presentation/
